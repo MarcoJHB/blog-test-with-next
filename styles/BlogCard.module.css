@@ -1,7 +1,6 @@
 .card {
   padding: 2%;
-  margin-top: 5rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background: #6fcf97;
   overflow: hidden;
   display: flex;
@@ -13,6 +12,7 @@
 }
 
 .category {
+  font-size: 14px;
   background: #ffffff;
   border-radius: 28px;
   text-transform: lowercase;
