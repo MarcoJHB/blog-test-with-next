@@ -18,3 +18,25 @@
   .main {
   }
 }
+
+.about {
+  padding: 4rem 10%;
+  height: 100vh;
+}
+
+.about__box {
+  background: #de8989;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  color: #171616;
+}
+
+.about__box .leftCol,
+.about__box .rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5%;
+  align-items: flex-start;
+}

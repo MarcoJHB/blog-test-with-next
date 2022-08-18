@@ -51,7 +51,55 @@ export default function Home({ posts }) {
         />
         <link rel="icon" href="/favicon.svg" />
       </Head>
+      <section className={styles.about}>
+        <div className={styles.about__box}>
+          <div className={styles.leftCol}>
+            <div className={styles.profileContainer}>
+              <img src="./public/img/marco-profile-pic.webp" alt="" />
+            </div>
+            <h2 class="fs-secondary-heading">About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque debitis
+              officia odit impedit facilis sequi, aspernatur reiciendis incidunt!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque debitis
+              officia odit impedit facilis sequi, aspernatur reiciendis incidunt!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque debitis
+              officia odit impedit facilis sequi, aspernatur reiciendis incidunt!
+            </p>
+          </div>
 
+          <div className={styles.rightCol}>
+            <h2 class="fs-secondary-heading">Skills</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque debitis
+              officia odit:
+            </p>
+            <ul>
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GitHub</li>
+              <li>SEO</li>
+              <li>Google Analytics</li>
+              <li>SASS</li>
+              <li>RESTful APIs</li>
+              <li>Git</li>
+              <li>WordPress</li>
+              <li>VS Code</li>
+            </ul>
+            <h2 class="fs-secondary-heading">Current Projects</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque debitis
+              officia odit impedit facilis sequi, aspernatur reiciendis incidunt!
+            </p>
+            <button class="btn fs-btn fs-body">Full Bio</button>
+          </div>
+        </div>
+      </section>
       <main className={styles.main}>
         {posts
           .map((post) => (
