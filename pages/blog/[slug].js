@@ -1,5 +1,9 @@
 import styles from '../../styles/Slug.module.css';
 import { GraphQLClient, gql } from 'graphql-request';
+import Container from '../../components/container';
+import ErrorPage from 'next/error';
+import { useRouter } from 'next/router';
+import PostHeader from '../../components/PostHeader';
 
 const graphcms = new GraphQLClient(
   'https://api-eu-west-2.hygraph.com/v2/cl6vsf4ud3ejc01t605uw0vdo/master'
@@ -56,13 +60,15 @@ export async function getStaticProps({ params }) {
 export default function BlogPost({ post }) {
   return (
     <main className={styles.blog}>
+      {/* <PostHeader coverImage={post.coverImage} /> */}
       <img src={post.coverPhoto.url} className={styles.cover}></img>
-      <div className={styles.title}>
-        <p>Category: {post.category.name}</p>
-        <p>Date Published: {post.datePublished}</p>
-      </div>
-      <h2>{post.title}</h2>
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: post.content.html }}></div>
+      <Container>
+        <div className={styles.content}>
+          <div className={styles.title}></div>
+          <h2 className={styles.title}>{post.title}</h2>
+          <div dangerouslySetInnerHTML={{ __html: post.content.html }}></div>
+        </div>
+      </Container>
     </main>
   );
 }
