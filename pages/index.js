@@ -8,6 +8,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import profilePic from '../public/img/marco-profile-pic.webp';
 import Script from 'next/script';
+import Animation from '../components/Animation';
 
 const colorRange = ['#6FCF97', '#F2C94C', '#56CCF2', '#F2994A', '#2D9CDB', '#BB6BD9'];
 
@@ -47,108 +48,106 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   return (
-    <div className={styles.container}>
-      <Layout>
-        <Head>
-          <title>My Portfolio</title>
-          <meta
-            name="description"
-            content="Web Development and Web Design, here is my portfolio that shows off my projects and industry insights"
-          />
-          <link rel="icon" href="/favicon.svg" />
-          <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></Script>
-          <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></Script>
-          <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></Script>
-          <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></Script>
-          <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></Script>
-          <Script src="./components/Animation.js" defer />
-        </Head>
-
-        <header class="header">
-          <div class="header__box">
-            <h1 class="header__title fw-regular fs-display-lg">
-              I’m Marco, and I like to
-              <br />
-              make <span class="awesome-text text-primary-400">awesome</span>
-              <br />
-              websites.
-            </h1>
-            <p class="header__body fs-body">
-              I've had a passion for front-end development ever since I learnt how to customise my
-              Android homescreen, but now I just want to help make websites better in every way.
-            </p>
-            <button class="btn fs-btn fs-body">Get in touch</button>
-          </div>
-          <div class="scroll-text scroll-text-1">
-            <span>
-              <a class="greek text-hover">Χαίρετε</a>
-              <a class="zulu text-hover">Sawubona</a>
-              <a class="french text-hover">Bonjour</a>
-              <a class="chinese text-hover">你好</a>
-              <a class="afrikaans text-hover">Hallo</a>
-              <a class="spanish text-hover">Hola</a>
-              <a class="korean text-hover">안녕하세요</a>
-              <a class="italian text-hover">Ciao</a>
-              <a class="greek text-hover">Χαίρετε</a>
-              <a class="zulu text-hover">Sawubona</a>
-              <a class="french text-hover">Bonjour</a>
-              <a class="chinese text-hover">你好</a>
-              <a class="afrikaans text-hover">Hallo</a>
-            </span>
-          </div>
-          <div class="scroll-text scroll-text-2">
-            <span>
-              <a class="greek text-hover">Χαίρετε</a>
-              <a class="zulu text-hover">Sawubona</a>
-              <a class="french text-hover">Bonjour</a>
-              <a class="chinese text-hover">你好</a>
-              <a class="afrikaans text-hover">Hallo</a>
-              <a class="spanish text-hover">Hola</a>
-              <a class="korean text-hover">안녕하세요</a>
-              <a class="italian text-hover">Ciao</a>
-              <a class="greek text-hover">Χαίρετε</a>
-              <a class="zulu text-hover">Sawubona</a>
-              <a class="french text-hover">Bonjour</a>
-              <a class="chinese text-hover">你好</a>
-              <a class="afrikaans text-hover">Hallo</a>
-            </span>
-          </div>
-          <div class="scroll-text scroll-text-3">
-            <span>
-              <a class="greek text-hover">Χαίρετε</a>
-              <a class="zulu text-hover">Sawubona</a>
-              <a class="french text-hover">Bonjour</a>
-              <a class="chinese text-hover">你好</a>
-              <a class="afrikaans text-hover">Hallo</a>
-              <a class="spanish text-hover">Hola</a>
-              <a class="korean text-hover">안녕하세요</a>
-              <a class="italian text-hover">Ciao</a>
-              <a class="greek text-hover">Χαίρετε</a>
-              <a class="zulu text-hover">Sawubona</a>
-              <a class="french text-hover">Bonjour</a>
-              <a class="chinese text-hover">你好</a>
-              <a class="afrikaans text-hover">Hallo</a>
-            </span>
-          </div>
-          <div class="scroll-text scroll-text-4">
-            <span>
-              <a class="greek text-hover">Χαίρετε</a>
-              <a class="zulu text-hover">Sawubona</a>
-              <a class="french text-hover">Bonjour</a>
-              <a class="chinese text-hover">你好</a>
-              <a class="afrikaans text-hover">Hallo</a>
-              <a class="spanish text-hover">Hola</a>
-              <a class="korean text-hover">안녕하세요</a>
-              <a class="italian text-hover">Ciao</a>
-              <a class="greek text-hover">Χαίρετε</a>
-              <a class="zulu text-hover">Sawubona</a>
-              <a class="french text-hover">Bonjour</a>
-              <a class="chinese text-hover">你好</a>
-              <a class="afrikaans text-hover">Hallo</a>
-            </span>
-          </div>
-        </header>
-
+    <Layout className={styles.container}>
+      <Head>
+        <title>My Portfolio</title>
+        <meta
+          name="description"
+          content="Web Development and Web Design, here is my portfolio that shows off my projects and industry insights"
+        />
+        <link rel="icon" href="/favicon.svg" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></Script>
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></Script>
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></Script>
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></Script>
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></Script>
+        <Script src="./components/Animation.js" defer />
+      </Head>
+      <header class="header">
+        <div class="header__box">
+          <h1 class="header__title fw-regular fs-display-lg">
+            I’m Marco, and I like to
+            <br />
+            make <span class="awesome-text text-primary-400">awesome</span>
+            <br />
+            websites.
+          </h1>
+          <p class="header__body fs-body">
+            I've had a passion for front-end development ever since I learnt how to customise my
+            Android homescreen, but now I just want to help make websites better in every way.
+          </p>
+          <button class="btn fs-btn fs-body">Get in touch</button>
+        </div>
+        <div class="scroll-text scroll-text-1">
+          <span>
+            <a class="greek text-hover">Χαίρετε</a>
+            <a class="zulu text-hover">Sawubona</a>
+            <a class="french text-hover">Bonjour</a>
+            <a class="chinese text-hover">你好</a>
+            <a class="afrikaans text-hover">Hallo</a>
+            <a class="spanish text-hover">Hola</a>
+            <a class="korean text-hover">안녕하세요</a>
+            <a class="italian text-hover">Ciao</a>
+            <a class="greek text-hover">Χαίρετε</a>
+            <a class="zulu text-hover">Sawubona</a>
+            <a class="french text-hover">Bonjour</a>
+            <a class="chinese text-hover">你好</a>
+            <a class="afrikaans text-hover">Hallo</a>
+          </span>
+        </div>
+        <div class="scroll-text scroll-text-2">
+          <span>
+            <a class="greek text-hover">Χαίρετε</a>
+            <a class="zulu text-hover">Sawubona</a>
+            <a class="french text-hover">Bonjour</a>
+            <a class="chinese text-hover">你好</a>
+            <a class="afrikaans text-hover">Hallo</a>
+            <a class="spanish text-hover">Hola</a>
+            <a class="korean text-hover">안녕하세요</a>
+            <a class="italian text-hover">Ciao</a>
+            <a class="greek text-hover">Χαίρετε</a>
+            <a class="zulu text-hover">Sawubona</a>
+            <a class="french text-hover">Bonjour</a>
+            <a class="chinese text-hover">你好</a>
+            <a class="afrikaans text-hover">Hallo</a>
+          </span>
+        </div>
+        <div class="scroll-text scroll-text-3">
+          <span>
+            <a class="greek text-hover">Χαίρετε</a>
+            <a class="zulu text-hover">Sawubona</a>
+            <a class="french text-hover">Bonjour</a>
+            <a class="chinese text-hover">你好</a>
+            <a class="afrikaans text-hover">Hallo</a>
+            <a class="spanish text-hover">Hola</a>
+            <a class="korean text-hover">안녕하세요</a>
+            <a class="italian text-hover">Ciao</a>
+            <a class="greek text-hover">Χαίρετε</a>
+            <a class="zulu text-hover">Sawubona</a>
+            <a class="french text-hover">Bonjour</a>
+            <a class="chinese text-hover">你好</a>
+            <a class="afrikaans text-hover">Hallo</a>
+          </span>
+        </div>
+        <div class="scroll-text scroll-text-4">
+          <span>
+            <a class="greek text-hover">Χαίρετε</a>
+            <a class="zulu text-hover">Sawubona</a>
+            <a class="french text-hover">Bonjour</a>
+            <a class="chinese text-hover">你好</a>
+            <a class="afrikaans text-hover">Hallo</a>
+            <a class="spanish text-hover">Hola</a>
+            <a class="korean text-hover">안녕하세요</a>
+            <a class="italian text-hover">Ciao</a>
+            <a class="greek text-hover">Χαίρετε</a>
+            <a class="zulu text-hover">Sawubona</a>
+            <a class="french text-hover">Bonjour</a>
+            <a class="chinese text-hover">你好</a>
+            <a class="afrikaans text-hover">Hallo</a>
+          </span>
+        </div>
+      </header>
+      <main>
         <section className={styles.about}>
           <div className={styles.about__box}>
             <div className={styles.leftCol}>
@@ -200,52 +199,51 @@ export default function Home({ posts }) {
             </div>
           </div>
         </section>
-        <main>
-          <Container>
-            <section>
-              <h2 className={styles.secondaryHeading}>
-                Discover the best things to read, watch, make, and more!
-              </h2>
-              <div className={styles.blog}>
-                {posts
-                  .map((post) => (
-                    <BlogCard
-                      title={post.title}
-                      category={post.category}
-                      coverPhoto={post.coverPhoto}
-                      key={post.id}
-                      datePublished={post.datePublished}
-                      slug={post.slug}
-                    />
-                  ))
-                  .sort((a, b) => {
-                    if (a.datePublished < b.date) {
-                      return 1;
-                    } else {
-                      return -1;
-                    }
-                  })
-                  .slice(0, 6)}
-              </div>
-            </section>
-          </Container>
-        </main>
-        <Link href="blog">
-          <button>More Posts</button>
-        </Link>
 
-        <section class="projects">
+        <Container>
+          <section className={styles.centerSection}>
+            <h2 className={styles.secondaryHeading}>
+              Discover the best things to read, watch, make, and more!
+            </h2>
+            <div className={styles.blog}>
+              {posts
+                .map((post) => (
+                  <BlogCard
+                    title={post.title}
+                    category={post.category}
+                    coverPhoto={post.coverPhoto}
+                    key={post.id}
+                    datePublished={post.datePublished}
+                    slug={post.slug}
+                  />
+                ))
+                .sort((a, b) => {
+                  if (a.datePublished < b.date) {
+                    return 1;
+                  } else {
+                    return -1;
+                  }
+                })
+                .slice(0, 6)}
+            </div>
+            <Link href="blog">
+              <button>More Posts</button>
+            </Link>
+          </section>
+        </Container>
+
+        <section className={styles.projects}>
           <h2 class="section-heading fs-secondary-heading text-neutral-100">
             Some projects I built that you might enjoy
           </h2>
           <div id="mouse-project">View Project</div>
-          <article class="project__content project-1">
-            <div class="img-col">
+          <article className={styles.projectContent}>
+            <div className={styles.imgCol}>
               <div class="img-container">
                 <img src="" alt="" />
               </div>
             </div>
-            <div class="text-col">
+            <div className={styles.textCol}>
               <div class="text__block">
                 <h3 class="fs-tertiary-heading fw-bold text-neutral-100">Project Name 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aperiam?</p>
@@ -256,8 +254,8 @@ export default function Home({ posts }) {
               </div>
             </div>
           </article>
-          <article class="project__content project-2">
-            <div class="text-col">
+          <article className={styles.projectContent}>
+            <div className={styles.textCol}>
               <div class="text__block">
                 <h3 class="fs-tertiary-heading fw-bold text-neutral-100">Project Name 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aperiam?</p>
@@ -267,19 +265,19 @@ export default function Home({ posts }) {
                 </ul>
               </div>
             </div>
-            <div class="img-col">
+            <div className={styles.imgCol}>
               <div class="img-container">
                 <img src="" alt="" />
               </div>
             </div>
           </article>
-          <article class="project__content project-3">
-            <div class="img-col">
+          <article className={styles.projectContent}>
+            <div className={styles.imgCol}>
               <div class="img-container">
                 <img src="" alt="" />
               </div>
             </div>
-            <div class="text-col">
+            <div className={styles.textCol}>
               <div class="text__block">
                 <h3 class="fs-tertiary-heading fw-bold text-neutral-100">Project Name 3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aperiam?</p>
@@ -290,8 +288,8 @@ export default function Home({ posts }) {
               </div>
             </div>
           </article>
-          <article class="project__content project-4">
-            <div class="text-col">
+          <article className={styles.projectContent}>
+            <div className={styles.textCol}>
               <div class="text__block">
                 <h3 class="fs-tertiary-heading fw-bold text-neutral-100">Project Name 4</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aperiam?</p>
@@ -301,7 +299,7 @@ export default function Home({ posts }) {
                 </ul>
               </div>
             </div>
-            <div class="img-col">
+            <div className={styles.imgCol}>
               <div class="img-container">
                 <img src="" alt="" />
               </div>
@@ -343,7 +341,7 @@ export default function Home({ posts }) {
             </div>
           </article>
         </section>
-      </Layout>
-    </div>
+      </main>
+    </Layout>
   );
 }
