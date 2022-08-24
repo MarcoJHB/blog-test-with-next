@@ -9,8 +9,7 @@ import Image from 'next/image';
 import profilePic from '../public/img/marco-profile-pic.webp';
 import Script from 'next/script';
 import Animation from '../components/Animation';
-
-const colorRange = ['#6FCF97', '#F2C94C', '#56CCF2', '#F2994A', '#2D9CDB', '#BB6BD9'];
+import Project from '../components/Project.js';
 
 const graphcms = new GraphQLClient(
   'https://api-eu-west-2.hygraph.com/v2/cl6vsf4ud3ejc01t605uw0vdo/master'
@@ -235,158 +234,54 @@ export default function Home({ posts }) {
         <section className={styles.projects}>
           <h2 className={styles.secondaryHeading}>Some projects I built that you might enjoy</h2>
           <div id="mouse-project">View Project</div>
-          <article className={styles.projectContent}>
-            <div className={styles.imgCol}>
-              <div class="img-container">
-                <img src="" alt="" />
-              </div>
-            </div>
-            <div className={styles.textCol}>
-              <div class="text__block">
-                <h3 class="fs-tertiary-heading fw-bold text-neutral-100">REST Countries</h3>
-                <p>
-                  <strong>Overview: </strong> Based on the Frontend Mentor Challenge.
-                </p>
-                <p>
-                  <strong>Problem: </strong> Use the REST Countries API to pull various country data
-                  and display it accordingly.
-                </p>
-                <p>
-                  <strong>Solution: </strong> Connect to REST Countries API with simple JS and build
-                  the site in plain HTML/CSS.
-                </p>
-                <h4>Tech Stack</h4>
-                <ul>
-                  <li>Javascript</li>
-                  <li>CSS</li>
-                </ul>
-                <h4>Useful Links</h4>
-                <div>
-                  <button className={styles.iconButton}>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 60 59"
-                      fill="black"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M30 0.103516C13.425 0.103516 0 13.5285 0 30.1035C0 43.3785 8.5875 54.591 20.5125 58.566C22.0125 58.8285 22.575 57.9285 22.575 57.141C22.575 56.4285 22.5375 54.066 22.5375 51.5535C15 52.941 13.05 49.716 12.45 48.0285C12.1125 47.166 10.65 44.5035 9.375 43.791C8.325 43.2285 6.825 41.841 9.3375 41.8035C11.7 41.766 13.3875 43.9785 13.95 44.8785C16.65 49.416 20.9625 48.141 22.6875 47.3535C22.95 45.4035 23.7375 44.091 24.6 43.341C17.925 42.591 10.95 40.0035 10.95 28.5285C10.95 25.266 12.1125 22.566 14.025 20.466C13.725 19.716 12.675 16.641 14.325 12.516C14.325 12.516 16.8375 11.7285 22.575 15.591C24.975 14.916 27.525 14.5785 30.075 14.5785C32.625 14.5785 35.175 14.916 37.575 15.591C43.3125 11.691 45.825 12.516 45.825 12.516C47.475 16.641 46.425 19.716 46.125 20.466C48.0375 22.566 49.2 25.2285 49.2 28.5285C49.2 40.041 42.1875 42.591 35.5125 43.341C36.6 44.2785 37.5375 46.0785 37.5375 48.891C37.5375 52.9035 37.5 56.1285 37.5 57.141C37.5 57.9285 38.0625 58.866 39.5625 58.566C45.5179 56.5553 50.6929 52.7277 54.3592 47.6219C58.0254 42.5161 59.9982 36.3892 60 30.1035C60 13.5285 46.575 0.103516 30 0.103516Z"
-                        fill="black"
-                      />
-                    </svg>
-                    GitHub Code
-                  </button>
-                  <button className={styles.iconButton}>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 60 59"
-                      fill="black"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M30 0.103516C13.425 0.103516 0 13.5285 0 30.1035C0 43.3785 8.5875 54.591 20.5125 58.566C22.0125 58.8285 22.575 57.9285 22.575 57.141C22.575 56.4285 22.5375 54.066 22.5375 51.5535C15 52.941 13.05 49.716 12.45 48.0285C12.1125 47.166 10.65 44.5035 9.375 43.791C8.325 43.2285 6.825 41.841 9.3375 41.8035C11.7 41.766 13.3875 43.9785 13.95 44.8785C16.65 49.416 20.9625 48.141 22.6875 47.3535C22.95 45.4035 23.7375 44.091 24.6 43.341C17.925 42.591 10.95 40.0035 10.95 28.5285C10.95 25.266 12.1125 22.566 14.025 20.466C13.725 19.716 12.675 16.641 14.325 12.516C14.325 12.516 16.8375 11.7285 22.575 15.591C24.975 14.916 27.525 14.5785 30.075 14.5785C32.625 14.5785 35.175 14.916 37.575 15.591C43.3125 11.691 45.825 12.516 45.825 12.516C47.475 16.641 46.425 19.716 46.125 20.466C48.0375 22.566 49.2 25.2285 49.2 28.5285C49.2 40.041 42.1875 42.591 35.5125 43.341C36.6 44.2785 37.5375 46.0785 37.5375 48.891C37.5375 52.9035 37.5 56.1285 37.5 57.141C37.5 57.9285 38.0625 58.866 39.5625 58.566C45.5179 56.5553 50.6929 52.7277 54.3592 47.6219C58.0254 42.5161 59.9982 36.3892 60 30.1035C60 13.5285 46.575 0.103516 30 0.103516Z"
-                        fill="black"
-                      />
-                    </svg>
-                    Live Site
-                  </button>
-                 
-                </div>
-              </div>
-            </div>
-          </article>
-          <article className={styles.projectContent}>
-            <div className={styles.textCol}>
-              <div class="text__block">
-                <h3 class="fs-tertiary-heading fw-bold text-neutral-100">Project Name 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aperiam?</p>
-                <ul>
-                  <li>Javascript</li>
-                  <li>CSS</li>
-                </ul>
-              </div>
-            </div>
-            <div className={styles.imgCol}>
-              <div class="img-container">
-                <img src="" alt="" />
-              </div>
-            </div>
-          </article>
-          <article className={styles.projectContent}>
-            <div className={styles.imgCol}>
-              <div class="img-container">
-                <img src="" alt="" />
-              </div>
-            </div>
-            <div className={styles.textCol}>
-              <div class="text__block">
-                <h3 class="fs-tertiary-heading fw-bold text-neutral-100">Project Name 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aperiam?</p>
-                <ul>
-                  <li>Javascript</li>
-                  <li>CSS</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-          <article className={styles.projectContent}>
-            <div className={styles.textCol}>
-              <div class="text__block">
-                <h3 class="fs-tertiary-heading fw-bold text-neutral-100">Project Name 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aperiam?</p>
-                <ul>
-                  <li>Javascript</li>
-                  <li>CSS</li>
-                </ul>
-              </div>
-            </div>
-            <div className={styles.imgCol}>
-              <div class="img-container">
-                <img src="" alt="" />
-              </div>
-            </div>
-          </article>
-          <button class="btn fs-btn fs-body">More Projects</button>
-        </section>
-        <section class="testimonials">
-          <article class="testimonial">
-            <div class="testimonial-text fs-tertiary-heading text-neutral-900">
-              <p>
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure placeat perspiciatis
-                velit minus praesentium nulla distinctio voluptatum sapiente facere maiores
-                molestias odit vel quod id nostrum quaerat aliquam consequatur delectus unde
-                veritatis, accusamus vero amet! Fugit id odit officia rerum."
-              </p>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="testimononial-img">
-              <div class="profile-background">
-                <img src="" alt="" />
-              </div>
-            </div>
-          </article>
-          <article class="testimonial">
-            <div class="testimononial-img">
-              <div class="profile-background">
-                <img src="" alt="" />
-              </div>
-            </div>
-            <div class="testimonial-text fs-tertiary-heading text-neutral-900">
-              <p>
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure placeat perspiciatis
-                velit minus praesentium nulla distinctio voluptatum sapiente facere maiores
-                molestias odit vel quod id nostrum quaerat aliquam consequatur delectus unde
-                veritatis, accusamus vero amet! Fugit id odit officia rerum."
-              </p>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
-          </article>
+          <Project
+            name="🗺️ REST Countries with Dark Mode"
+            overview="Based on the Frontend Mentor Challenge."
+            problem="Use the REST Countries API to pull various country data and
+            display it accordingly."
+            solution="Connect to REST Countries API with simple JS and build the
+            site in plain HTML/CSS."
+            stacks={['Javascript', 'CSS', 'HTML']}
+            github="https://github.com/MarcoJHB/rest-countries-colour-switcher"
+            liveLink="https://marcojhb.github.io/rest-countries-colour-switcher/"
+            className={styles.projectCard}
+            imgSrc="/img/rest-countries.jpg"
+          />
+          <Project
+            name="❤️ Love you more than"
+            overview="Based on the Frontend Mentor Challenge."
+            problem="Use the REST Countries API to pull various country data and
+            display it accordingly."
+            solution="Connect to REST Countries API with simple JS and build the
+            site in plain HTML/CSS."
+            stacks={['Javascript', 'CSS', 'HTML']}
+            github="https://github.com/MarcoJHB/LoveYouMoreThan"
+            liveLink="https://marcojhb.github.io/LoveYouMoreThan/"
+            className={styles.projectCard}
+            imgSrc={'/img/marcojhb.github.io_LoveYouMoreThan_.png'}
+          />
+          <Project
+            name="🍎 Gravity Collision"
+            overview="A simple playground for having fun with gravity and canvas."
+            problem="Using the canvas, build a page that simulates balls dropping from the top."
+            solution="Use canvas and vector formulas"
+            stacks={['Javascript', 'CSS', 'HTML']}
+            github="https://github.com/MarcoJHB/gravity-collision"
+            liveLink="https://marcojhb.github.io/LoveYouMoreThan/"
+            className={styles.projectCard}
+            imgSrc={'/img/marcojhb.github.io_gravity-collision_.png'}
+          />
+          <Project
+            name="🤸 Twister Phone Game"
+            overview="My partner and I decided to try out fun games together, so we decided to try out the popular game called Twister."
+            problem="I wanted the game to be played on my phone with minimal interactions required."
+            solution="A simply HTML/CSS site that only requires taps from the user to change the colour/body part."
+            stacks={['Javascript', 'CSS', 'HTML']}
+            github="https://github.com/MarcoJHB/twister"
+            liveLink="https://marcojhb.github.io/twister/"
+            className={styles.projectCard}
+            imgSrc={'/img/marcojhb.github.io_twister_.png'}
+          />
         </section>
       </main>
     </Layout>

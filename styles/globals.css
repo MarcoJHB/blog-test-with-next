@@ -12,7 +12,7 @@
   --fs-scroll: clamp(9.375rem, 8.625rem + 3.75vw, 12rem);
   --fs-display: clamp(1.5rem, 0.8571rem + 3.2143vw, 3.75rem);
   --fs-secondary-heading: clamp(1.5rem, 0.8571rem + 3.2143vw, 3rem);
-  --fs-tertiary-heading: clamp(1.2rem, 0.8571rem + 3.2143vw, 2rem);
+  --fs-tertiary-heading: clamp(1.5rem, 0.8571rem + 3.2143vw, 3rem);
   --fs-body: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
   --fs-button: clamp(1rem, 10vw, 2rem);
 
@@ -249,7 +249,6 @@ li:hover {
   transform: translate(-0.25rem, -0.25rem);
 }
 
-
 .header__title {
   font-size: var(--fs-display);
   color: var(--primary-color);
@@ -348,21 +347,10 @@ a:hover {
   text-align: center;
 }
 
-
 .text__block {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-.img-container {
-  width: 80%;
-  aspect-ratio: 16/9;
-  margin: 0;
-  background-color: #d9d9d9;
-  border: 2px solid #000;
-  border-radius: 20px;
-  box-shadow: 30px 30px 0px #000000;
 }
 
 .text__block {
