@@ -30,7 +30,7 @@ export default function Meta({ title }) {
         name="description"
         content="Web Development and Web Design, here is my portfolio that shows off my projects and industry insights"
       />
-      <title>Marco Agas | Front-end Developer | {title}</title>
+      <title>Marco Agas | Front-end Developer</title>
     </Head>
   );
 }

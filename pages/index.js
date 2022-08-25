@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Container from '../components/container';
+import Container from '../components/Container.js';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 import { GraphQLClient, gql } from 'graphql-request';
@@ -163,17 +163,21 @@ export default function Home({ posts }) {
                 debitis officia odit:
               </p>
               <ul>
-                <li>Javascript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>GitHub</li>
-                <li>SEO</li>
-                <li>Google Analytics</li>
-                <li>SASS</li>
-                <li>RESTful APIs</li>
-                <li>Git</li>
-                <li>WordPress</li>
-                <li>VS Code</li>
+                {[
+                  'Javascript',
+                  'HTML',
+                  'CSS',
+                  'GitHub',
+                  'SEO',
+                  'Google Analytics',
+                  'SASS',
+                  'RESTful APIs',
+                  'Git',
+                  'WordPress',
+                  'VS Code',
+                ].map((item) => (
+                  <li key="{item}">{item}</li>
+                ))}
               </ul>
               <h2 className={styles.secondaryHeading}>Current Projects</h2>
               <p>
