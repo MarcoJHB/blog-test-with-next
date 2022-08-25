@@ -1,5 +1,6 @@
 import Container from './container';
 import styles from '../styles/Footer.module.css';
+import ContactForm from '../components/ContactForm.js';
 
 export default function Footer() {
   return (
@@ -8,6 +9,7 @@ export default function Footer() {
         <div className={styles.footerContainer}>
           <div className={styles.leftCol}>
             <p>Get in touch with me today!</p>
+            <ContactForm />
             <div className={styles.socialIcons}>
               <svg
                 fill="#fff"

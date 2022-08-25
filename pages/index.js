@@ -10,6 +10,7 @@ import profilePic from '../public/img/marco-profile-pic.webp';
 import Script from 'next/script';
 import Animation from '../components/Animation';
 import Project from '../components/Project.js';
+import Meta from '../components/Meta.js';
 
 const graphcms = new GraphQLClient(
   'https://api-eu-west-2.hygraph.com/v2/cl6vsf4ud3ejc01t605uw0vdo/master'
@@ -48,20 +49,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <Layout className={styles.container}>
-      <Head>
-        <title>My Portfolio</title>
-        <meta
-          name="description"
-          content="Web Development and Web Design, here is my portfolio that shows off my projects and industry insights"
-        />
-        <link rel="icon" href="/favicon.svg" />
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></Script>
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></Script>
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></Script>
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></Script>
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></Script>
-        <Script src="./components/Animation.js" defer />
-      </Head>
+      <Meta title="My Portfolio" />
       <header className={styles.header}>
         <div className={styles.header__box}>
           <h1 className="header__title fw-regular fs-display-lg">

@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
-export default function Meta() {
+export default function Meta({ title }) {
   return (
     <Head>
       <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
@@ -17,7 +18,21 @@ export default function Meta() {
         name="Marco Agas | Front-End Web Developer"
         content="Developing websites, apps and more."
       />
+      <link rel="icon" href="/favicon.svg" />
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></Script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></Script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></Script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></Script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></Script>
+      <Script src="./components/Animation.js" defer />
       <meta property="og:image" content="/favicon/favicon-32x32.png" />
+      <meta
+        name="description"
+        content="Web Development and Web Design, here is my portfolio that shows off my projects and industry insights"
+      />
+      <title>Marco Agas | Front-end Developer | {title}</title>
     </Head>
   );
 }
+
+<Head></Head>;
