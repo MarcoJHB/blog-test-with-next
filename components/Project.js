@@ -16,14 +16,7 @@ export default function Project({
     <article className={styles.projectContent}>
       <div className={styles.imgCol}>
         <div className={styles.imgContainer}>
-          <Image
-            src={imgSrc}
-            width="100%"
-            height="100%"
-            layout="fill"
-            objectFit="cover"
-            alt={name}
-          ></Image>
+          <Image src={imgSrc} layout="fill" objectFit="cover" alt={name}></Image>
         </div>
       </div>
       <div className={styles.textCol}>

@@ -67,53 +67,53 @@ export default function Home({ posts }) {
         </div>
         <div className="scroll-text scroll-text-1">
           <span>
-            <a class="greek text-hover">Χαίρετε</a>
-            <a class="zulu text-hover">Sawubona</a>
-            <a class="french text-hover">Bonjour</a>
-            <a class="chinese text-hover">你好</a>
-            <a class="afrikaans text-hover">Hallo</a>
-            <a class="spanish text-hover">Hola</a>
-            <a class="korean text-hover">안녕하세요</a>
-            <a class="italian text-hover">Ciao</a>
-            <a class="greek text-hover">Χαίρετε</a>
-            <a class="zulu text-hover">Sawubona</a>
-            <a class="french text-hover">Bonjour</a>
-            <a class="chinese text-hover">你好</a>
-            <a class="afrikaans text-hover">Hallo</a>
+            <a className="greek text-hover">Χαίρετε</a>
+            <a className="zulu text-hover">Sawubona</a>
+            <a className="french text-hover">Bonjour</a>
+            <a className="chinese text-hover">你好</a>
+            <a className="afrikaans text-hover">Hallo</a>
+            <a className="spanish text-hover">Hola</a>
+            <a className="korean text-hover">안녕하세요</a>
+            <a className="italian text-hover">Ciao</a>
+            <a className="greek text-hover">Χαίρετε</a>
+            <a className="zulu text-hover">Sawubona</a>
+            <a className="french text-hover">Bonjour</a>
+            <a className="chinese text-hover">你好</a>
+            <a className="afrikaans text-hover">Hallo</a>
           </span>
         </div>
         <div className="scroll-text scroll-text-2">
           <span>
-            <a class="greek text-hover">Χαίρετε</a>
-            <a class="zulu text-hover">Sawubona</a>
-            <a class="french text-hover">Bonjour</a>
-            <a class="chinese text-hover">你好</a>
-            <a class="afrikaans text-hover">Hallo</a>
-            <a class="spanish text-hover">Hola</a>
-            <a class="korean text-hover">안녕하세요</a>
-            <a class="italian text-hover">Ciao</a>
-            <a class="greek text-hover">Χαίρετε</a>
-            <a class="zulu text-hover">Sawubona</a>
-            <a class="french text-hover">Bonjour</a>
-            <a class="chinese text-hover">你好</a>
-            <a class="afrikaans text-hover">Hallo</a>
+            <a className="greek text-hover">Χαίρετε</a>
+            <a className="zulu text-hover">Sawubona</a>
+            <a className="french text-hover">Bonjour</a>
+            <a className="chinese text-hover">你好</a>
+            <a className="afrikaans text-hover">Hallo</a>
+            <a className="spanish text-hover">Hola</a>
+            <a className="korean text-hover">안녕하세요</a>
+            <a className="italian text-hover">Ciao</a>
+            <a className="greek text-hover">Χαίρετε</a>
+            <a className="zulu text-hover">Sawubona</a>
+            <a className="french text-hover">Bonjour</a>
+            <a className="chinese text-hover">你好</a>
+            <a className="afrikaans text-hover">Hallo</a>
           </span>
         </div>
         <div className="scroll-text scroll-text-3">
           <span>
-            <a class="greek text-hover">Χαίρετε</a>
-            <a class="zulu text-hover">Sawubona</a>
-            <a class="french text-hover">Bonjour</a>
-            <a class="chinese text-hover">你好</a>
-            <a class="afrikaans text-hover">Hallo</a>
-            <a class="spanish text-hover">Hola</a>
-            <a class="korean text-hover">안녕하세요</a>
-            <a class="italian text-hover">Ciao</a>
-            <a class="greek text-hover">Χαίρετε</a>
-            <a class="zulu text-hover">Sawubona</a>
-            <a class="french text-hover">Bonjour</a>
-            <a class="chinese text-hover">你好</a>
-            <a class="afrikaans text-hover">Hallo</a>
+            <a className="greek text-hover">Χαίρετε</a>
+            <a className="zulu text-hover">Sawubona</a>
+            <a className="french text-hover">Bonjour</a>
+            <a className="chinese text-hover">你好</a>
+            <a className="afrikaans text-hover">Hallo</a>
+            <a className="spanish text-hover">Hola</a>
+            <a className="korean text-hover">안녕하세요</a>
+            <a className="italian text-hover">Ciao</a>
+            <a className="greek text-hover">Χαίρετε</a>
+            <a className="zulu text-hover">Sawubona</a>
+            <a className="french text-hover">Bonjour</a>
+            <a className="chinese text-hover">你好</a>
+            <a className="afrikaans text-hover">Hallo</a>
           </span>
         </div>
         <div className="scroll-text scroll-text-4">
