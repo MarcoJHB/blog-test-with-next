@@ -49,7 +49,6 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <Layout className={styles.container}>
-      <Meta title="My Portfolio" />
       <header className={styles.header}>
         <div className={styles.header__box}>
           <h1 className="header__title fw-regular fs-display-lg">
