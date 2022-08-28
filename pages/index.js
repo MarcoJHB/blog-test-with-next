@@ -1,16 +1,16 @@
 import Head from 'next/head';
-import Container from '../components/Container.js';
+import Container from '../components/Container';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 import { GraphQLClient, gql } from 'graphql-request';
-import BlogCard from '../components/BlogCard.js';
+import BlogCard from '../components/BlogCard';
 import Link from 'next/link';
 import Image from 'next/image';
 import profilePic from '../public/img/marco-profile-pic.webp';
 import Script from 'next/script';
 import Animation from '../components/Animation';
-import Project from '../components/Project.js';
-import Meta from '../components/Meta.js';
+import Project from '../components/Project';
+import Meta from '../components/Meta';
 
 const graphcms = new GraphQLClient(
   'https://api-eu-west-2.hygraph.com/v2/cl6vsf4ud3ejc01t605uw0vdo/master'
