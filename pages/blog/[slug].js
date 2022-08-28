@@ -1,9 +1,6 @@
 import styles from '../../styles/Slug.module.css';
 import { GraphQLClient, gql } from 'graphql-request';
 import Container from '../../components/Container.js';
-import ErrorPage from 'next/error';
-import { useRouter } from 'next/router';
-import PostHeader from '../../components/PostHeader.js';
 
 const graphcms = new GraphQLClient(
   'https://api-eu-west-2.hygraph.com/v2/cl6vsf4ud3ejc01t605uw0vdo/master'

@@ -2,8 +2,6 @@ import styles from '../styles/About.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import Container from '../components/Container.js';
-import Head from 'next/head';
-import Meta from '../components/Meta.js';
 
 export default function About() {
   return (
