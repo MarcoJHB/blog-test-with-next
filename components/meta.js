@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Script from 'next/script';
 
 export default function Meta({ title }) {
   return (
@@ -19,12 +18,12 @@ export default function Meta({ title }) {
         content="Developing websites, apps and more."
       />
       <link rel="icon" href="/favicon.svg" />
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></Script>
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></Script>
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></Script>
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></Script>
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></Script>
-      <Script src="./components/Animation.js" defer />
+      <link src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></link>
+      <link src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></link>
+      <link src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></link>
+      <link src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></link>
+      <link src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></link>
+      <link src="./components/Animation.js" defer />
       <meta property="og:image" content="/favicon/favicon-32x32.png" />
       <meta
         name="description"

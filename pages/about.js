@@ -13,6 +13,7 @@ export default function About() {
           height="100%"
           layout="fill"
           objectFit="cover"
+          alt="Gravity Collision"
         />
       </div>
       <Container>
@@ -26,10 +27,10 @@ export default function About() {
         </p>
         <h3>My quick story</h3>
         <p>
-          I've had a passion for making things efficient and effective, whether from a design or
+          I have had a passion for making things efficient and effective, whether from a design or
           function perspective. It all started during university, while in my final year of
           Industrial Engineering, that I discovered that I wanted to experience more of the world,
-          too. Since then I've worked in Philadelphia, Thailand, Spain and more.
+          too. Since then I jave worked in Philadelphia, Thailand, Spain and more.
         </p>
         <h3>As a front-end developer</h3>
         <p>
@@ -63,8 +64,8 @@ export default function About() {
           impedit nam sunt veritatis, quidem officia dolores soluta possimus iusto minus recusandae
           eos fuga illum harum. Aperiam!
         </p>
-        <h2>Let's have a chat!</h2>
-        <p>I'd love to hear from you.</p>
+        <h2>Let us have a chat!</h2>
+        <p>I would love to hear from you.</p>
       </Container>
     </main>
   );

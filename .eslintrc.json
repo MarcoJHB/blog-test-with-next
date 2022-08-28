@@ -1,4 +1,4 @@
 {
-  "extends": "next/babel",
-  "parser": "babel-eslint"
+  "extends": "next",
+  "parser": "@babel/eslint-parser"
 }
