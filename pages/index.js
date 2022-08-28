@@ -59,7 +59,7 @@ export default function Home({ posts }) {
             websites.
           </h1>
           <p className="header__body fs-body">
-            I've had a passion for front-end development ever since I learnt how to customise my
+            I have had a passion for front-end development ever since I learnt how to customise my
             Android homescreen, but now I just want to help make websites better in every way.
           </p>
           <button className={styles.btn}>Get in touch</button>
