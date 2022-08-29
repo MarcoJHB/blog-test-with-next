@@ -11,9 +11,8 @@ const ContactPage = () => {
     <React.Fragment>
       <p>Thank you for submitting this form. Someone should get back to you within 24-48 hours.</p>
 
-      <button onClick={() => router.replace('/contact', undefined, { shallow: true })}>
-        {' '}
-        Submit Another Response{' '}
+      <button onClick={() => router.replace('/', undefined, { shallow: true })}>
+        Submit Another Response
       </button>
     </React.Fragment>
   );
