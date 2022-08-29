@@ -1,6 +1,6 @@
-import Container from '../components/Container.js';
+import Container from './container.js';
 import styles from '../styles/Footer.module.css';
-import ContactForm from '../components/ContactForm.js';
+import ContactForm from './contactForm.js';
 
 export default function Footer() {
   return (

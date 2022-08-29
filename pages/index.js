@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import profilePic from '../public/img/marco-profile-pic.webp';
 import Project from '../components/Project';
+import Head from 'next/head';
 
 const graphcms = new GraphQLClient(
   'https://api-eu-west-2.hygraph.com/v2/cl6vsf4ud3ejc01t605uw0vdo/master'
@@ -45,6 +46,9 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <Layout className={styles.container}>
+      <Head>
+        <title>Marco Agas - Portfolio</title>
+      </Head>
       <header className={styles.header}>
         <div className={styles.header__box}>
           <h1 className="header__title fw-regular fs-display-lg">
