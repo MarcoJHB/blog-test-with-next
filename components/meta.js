@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export default function Meta({ title }) {
+export default function Meta() {
   return (
     <Head>
       <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
@@ -29,7 +29,6 @@ export default function Meta({ title }) {
         name="description"
         content="Web Development and Web Design, here is my portfolio that shows off my projects and industry insights"
       />
-      <title>Marco Agas | Front-end Developer</title>
     </Head>
   );
 }
