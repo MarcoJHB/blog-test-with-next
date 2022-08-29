@@ -11,32 +11,53 @@ const ContactPage = () => {
     <React.Fragment>
       <p>Thank you for submitting this form. Someone should get back to you within 24-48 hours.</p>
 
-      <button onClick={() => router.replace('/favicon/favicon.ico', undefined, { shallow: true })}>
-        Submit Another Response
+      <button onClick={() => router.replace('/', undefined, { shallow: true })}>
+        {' '}
+        Submit Another Response{' '}
       </button>
     </React.Fragment>
   );
 
   const ContactForm = (
-    <form name="contact" action="?success=true" method="POST" data-netlify="true">
-      <p>
+    <form
+      className="container"
+      method="POST"
+      name="contact-form"
+      action="/?success=true"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="subject" value={`You've got mail from ${submitterName}`} />
+      <input type="hidden" name="form-name" value="contact-form" />
+      <p hidden>
         <label>
-          Your Name: <input type="text" name="name" />
+          Don’t fill this out: <input name="bot-field" />
         </label>
       </p>
       <p>
-        <label>
-          Your Email: <input type="email" name="email" />
-        </label>
+        <label htmlFor="name">Name *</label>
+        <input
+          id="name"
+          name="name"
+          required
+          onChange={(e) => setSubmitterName(e.target.value)}
+          type="text"
+        />
       </p>
-      <p></p>
       <p>
-        <label>
-          Message: <textarea name="message"></textarea>
-        </label>
+        <label htmlFor="company">Company *</label>
+        <input id="company" name="company" required type="text" />
       </p>
       <p>
-        <button type="submit">Send</button>
+        <label htmlFor="email">E-mail Address *</label>
+        <input id="email" type="email" name="email" required />
+      </p>
+      <p>
+        <label htmlFor="message">Message *</label>
+        <textarea id="message" name="message" required />
+      </p>
+      <p>
+        <button type="submit">Submit</button>
       </p>
     </form>
   );
