@@ -1,4 +1,4 @@
-import CoverImage from './CoverImage';
+import CoverImage from './coverImage';
 
 export default function PostHeader({ coverImage }) {
   return (

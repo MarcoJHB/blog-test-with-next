@@ -1,12 +1,12 @@
-import Container from '../components/Container';
-import Layout from '../components/Layout';
+import Container from '../components/container';
+import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
 import { GraphQLClient, gql } from 'graphql-request';
-import BlogCard from '../components/BlogCard';
+import BlogCard from '../components/blogCard';
 import Link from 'next/link';
 import Image from 'next/image';
 import profilePic from '../public/img/marco-profile-pic.webp';
-import Project from '../components/Project';
+import Project from '../components/project';
 import Head from 'next/head';
 
 const graphcms = new GraphQLClient(
