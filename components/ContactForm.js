@@ -19,14 +19,26 @@ const ContactPage = () => {
   );
 
   const ContactForm = (
-    <form name="contact-form" method="POST" action="?success=true" data-netlify="true">
-      <label htmlFor="name">Name *</label>
-      <input id="name" name="name" required type="text" />
-      <label htmlFor="email">E-mail Address *</label>
-      <input id="email" type="email" name="email" required />
-      <label htmlFor="message">Message *</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Submit</button>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>
+          Your Name: <input type="text" name="name" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Your Email: <input type="email" name="email" />
+        </label>
+      </p>
+      <p></p>
+      <p>
+        <label>
+          Message: <textarea name="message"></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
     </form>
   );
 
