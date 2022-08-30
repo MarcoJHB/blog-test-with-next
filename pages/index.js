@@ -59,8 +59,8 @@ export default function Home({ posts }) {
             websites.
           </h1>
           <p className="header__body fs-body">
-            I have had a passion for front-end development ever since I learnt how to customise my
-            Android homescreen, but now I just want to help make websites better in every way.
+            Front-end web development is my passion, ever since I realised I learnt how to edit HTML
+            in Chrome Dev Tools (aka hacking).
           </p>
           <button className={styles.btn}>Get in touch</button>
         </div>
@@ -142,24 +142,28 @@ export default function Home({ posts }) {
               </div>
               <h2 className={styles.secondaryHeading}>About Me</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque
-                debitis officia odit impedit facilis sequi, aspernatur reiciendis incidunt!
+                I have had a passion for front-end development ever since I learnt how to customise
+                my{' '}
+                <Link href="https://www.youtube.com/user/mycolorscreen" passHref>
+                  <a className={styles.link}>Android homescreen</a>
+                </Link>
+                . And, ever since university, the online world always fascinated me. I have worked
+                in all careers, from marketing to engineering, but each time my passion for web
+                development grew stronger.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque
-                debitis officia odit impedit facilis sequi, aspernatur reiciendis incidunt!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque
-                debitis officia odit impedit facilis sequi, aspernatur reiciendis incidunt!
+                Currently, I am learning as much about{' '}
+                <Link href="https://github.com/MarcoJHB" passHref>
+                  <a className={styles.link}>front-end development</a>
+                </Link>{' '}
+                as possible using the various skills I have picked up along my journey.
               </p>
             </div>
 
             <div className={styles.rightCol}>
               <h2 className={styles.secondaryHeading}>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque
-                debitis officia odit:
+                Below are some of the tools and technologies I use to help bring ideas to reality:
               </p>
               <ul>
                 {[
@@ -180,8 +184,15 @@ export default function Home({ posts }) {
               </ul>
               <h2 className={styles.secondaryHeading}>Current Projects</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum rerum doloremque
-                debitis officia odit impedit facilis sequi, aspernatur reiciendis incidunt!
+                I am currently sinking myself into React and NextJS, follow me on&nbsp;
+                <Link href="https://twitter.com/MarcoJHB">
+                  <a className={styles.link}>Twitter</a>
+                </Link>{' '}
+                as I attempt to complete my&nbsp;
+                <Link href="https://twitter.com/hashtag/100DaysOfCode">
+                  <a className={styles.link}>#100daysofcode</a>
+                </Link>
+                .
               </p>
               <Link href="about">
                 <button>Full Bio</button>

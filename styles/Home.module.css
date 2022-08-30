@@ -1,3 +1,18 @@
+/* Links  */
+
+.link {
+  text-decoration: none;
+  border-bottom: 2px solid #ad6259;
+  box-shadow: inset 0 -4px 0 #ad6259;
+  color: inherit;
+  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.link:hover {
+  background: #ad6259;
+  color: inherit;
+}
+
 /* Buttons  */
 
 .iconButton {
@@ -59,61 +74,10 @@
   grid-gap: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .blog {
-    grid-template-columns: auto auto;
-  }
-  .projectContent {
-    flex-direction: column;
-    width: 100%;
-  }
-  .projectContent:nth-child(even) {
-    flex-direction: column-reverse;
-  }
-
-  .imgCol,
-  .textCol {
-    width: 100vw;
-  }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    padding: 0 10% 0 10%;
-    position: relative;
-    overflow-x: hidden;
-  }
-
-  .blog {
-    grid-template-columns: auto;
-  }
-
-  .projectContent {
-    flex-direction: column;
-    width: 100%;
-  }
-  .projectContent:nth-child(even) {
-    flex-direction: column-reverse;
-  }
-
-  .imgCol,
-  .textCol {
-    width: 100%;
-  }
-
-  .about__box {
-    flex-direction: column;
-  }
-}
+/* About Section  */
 
 .about {
   padding: 4rem 10%;
-  /* height: 100vh; */
 }
 
 .about__box {
@@ -122,12 +86,13 @@
   border-radius: 20px;
   display: flex;
   height: 100%;
-  padding: 5% 5%;
+  padding: 1% 5%;
 }
 
 .about__box .leftCol,
 .about__box .rightCol {
   display: flex;
+  flex: 50;
   flex-direction: column;
   gap: 2%;
   padding: 5%;
@@ -182,8 +147,59 @@
   z-index: 10;
 }
 
-
 .projectButtons {
   display: flex;
   gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about__box {
+    flex-direction: column;
+  }
+
+  .blog {
+    grid-template-columns: auto auto;
+  }
+  .projectContent {
+    flex-direction: column;
+    width: 100%;
+  }
+  .projectContent:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .imgCol,
+  .textCol {
+    width: 100vw;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 10% 0 10%;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .blog {
+    grid-template-columns: auto;
+  }
+
+  .projectContent {
+    flex-direction: column;
+    width: 100%;
+  }
+  .projectContent:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .imgCol,
+  .textCol {
+    width: 100%;
+  }
 }

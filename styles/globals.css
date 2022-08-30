@@ -138,6 +138,10 @@ h2 {
   padding: 2% 0rem;
 }
 
+p {
+  margin-bottom: 10px;
+}
+
 /* Utility classes  */
 
 .text-primary-400 {
