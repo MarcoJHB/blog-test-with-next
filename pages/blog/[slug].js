@@ -64,7 +64,6 @@ export default function BlogPost({ post }) {
         <title>{post.title + ' | Marco Agas Portfolio'}</title>
       </Head>
       <main className={styles.blog}>
-        {/* <PostHeader coverImage={post.coverImage} /> */}
         <Image
           width={2000}
           height={1000}
