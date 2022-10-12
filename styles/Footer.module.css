@@ -6,8 +6,8 @@
   background-color: rgb(0, 0, 0);
 }
 
-.footerContainer{
-    display: flex;
+.footerContainer {
+  display: flex;
 }
 
 .socialIcons {
@@ -25,4 +25,25 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .footerMenu {
+    align-items: center;
+  }
+
+  .socialIcons {
+    padding: 3rem;
+  }
+  .bottomBar {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

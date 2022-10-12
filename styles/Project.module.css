@@ -56,7 +56,12 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
+/* 
+.imgContainer:hover {
+  box-shadow: 30px 30px 0px #000000;
+} */
 
 /* Buttons  */
 
@@ -85,4 +90,56 @@
   box-shadow: 5px 5px 0px #000000;
   border: 1px solid #000;
   border-radius: 50%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about__box {
+    color: #171616;
+    background: #de8989;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 5% 5%;
+  }
+
+  .about__box .leftCol {
+    padding-bottom: 0;
+  }
+
+  .about__box .rightCol {
+    padding-top: 0;
+  }
+
+  .projectContent {
+    flex-direction: column;
+    width: 100%;
+  }
+  /* .projectContent:nth-child(even) {
+    flex-direction: column-reverse;
+  } */
+
+  .imgCol,
+  .textCol {
+    width: 100%;
+    padding: 8%;
+    height: initial;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+
+  .iconButton {
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    text-transform: lowercase;
+    letter-spacing: normal;
+    padding: 0.4rem 0.85rem;
+  }
 }

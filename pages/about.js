@@ -25,30 +25,37 @@ export default function About() {
           </Link>
           ?
         </p>
-        <h3>My quick story</h3>
+        <h2 className="secondaryHeading">My quick story</h2>
         <p>
           I have had a passion for making things efficient and effective, whether from a design or
           function perspective. It all started during university, while in my final year of
           Industrial Engineering, that I discovered that I wanted to experience more of the world,
           too. Since then I jave worked in Philadelphia, Thailand, Spain and more.
         </p>
-        <h3>As a front-end developer</h3>
+        <h2 className="secondaryHeading">As a front-end developer</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi veniam illo amet cumque
-          impedit nam sunt veritatis, quidem officia dolores soluta possimus iusto minus recusandae
-          eos fuga illum harum. Aperiam!
+          Improving UI and UX has always run through my veins, ever since I started editing my
+          Android homescreen and creating my own desktop widgets on my PC in high school. Back then,
+          programming seemed like an impossible task. However, once I started building websites for
+          my own website company using WordPress, I was hooked.
         </p>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi veniam illo amet cumque
-          impedit nam sunt veritatis, quidem officia dolores soluta possimus iusto minus recusandae
-          eos fuga illum harum. Aperiam!
+          Since 2020, I've been trying to learn as much as I can about front-end web design. Working
+          full-time meant that I could only learn in the mornings or on the weekend, but it didn't
+          stop me.
         </p>
+        <h3>Useful Stats</h3>
+        <ul>
+          <li>234 commits on GitHub</li>
+          <li>12 websites built</li>
+          <li>5 languages</li>
+        </ul>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi veniam illo amet cumque
-          impedit nam sunt veritatis, quidem officia dolores soluta possimus iusto minus recusandae
-          eos fuga illum harum. Aperiam!
+          My goal is to improve my knowledge in React, NextJS and headless CMS management for users.
+          I believe that design only tells half the story. Important content and HTML structure is
+          just as important if the client wishes to optimise their website on Google.
         </p>
-        <h3>As a person</h3>
+        <h2 className="secondaryHeading">As a person</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi veniam illo amet cumque
           impedit nam sunt veritatis, quidem officia dolores soluta possimus iusto minus recusandae
